@@ -1,0 +1,176 @@
+
+/* celulares */
+@media(max-width: 767px) {
+body{
+    background: whitesmoke;
+    flex-direction: column;
+    background-color: #f5f5f5 ;
+    margin: 0 auto;
+}
+.FotoHeader img{
+    width: 100%;
+}
+.titulo{
+    color: #FFFFFF;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    mix-blend-mode: difference; 
+    margin-left: 70px;
+    margin-top: 30px;
+    width: 80%;
+    
+}
+.texto{
+    color: #FFFFFF;
+    font-family: "Roboto Slab", Sans-serif;
+    font: size 15px;
+    font-weight: 100;
+    mix-blend-mode: difference;
+    margin-top: 50px; 
+    margin-left: 50px;
+    width: 80%; 
+}
+.slider {
+    margin: 0 auto;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 667px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #FFFFFF;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 667px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+}
+/* tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+body{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+.titulo{
+    color: #FFFFFF;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    mix-blend-mode: difference;   
+}
+.texto{
+    text-align: justify;
+    padding: 30px;
+    width: 1350px; 
+    font-size: 15px;
+}
+}
+/* orientações orizontais */
+@media(orientation: landscape) {
+}
+/* desktops */
+@media (min-width: 1024px) {
+body{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+    .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+.titulo{
+    color: #FFFFFF;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    mix-blend-mode: difference;
+    
+}
+.texto{
+    text-align: justify;
+    padding: 30px;
+    width: 1350px; 
+    font-size: 15px;
+}
+}
+
+
+
+
+
+
